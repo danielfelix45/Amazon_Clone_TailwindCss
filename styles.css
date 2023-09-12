@@ -1,3 +1,76 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .select-topheader {
+    @apply hidden md:block p-2 text-xs text-gray-700 bg-gray-100 hover:bg-gray-300 rounded-tl rounded-bl border-r border-gray-500
+  }
+
+  .div-navright-login-topheader {
+    @apply hidden md:block ml-1 pb-1 text-xs border border-transparent hover:border-white rounded-sm p-2
+  }
+
+  .div-navright-topheader {
+    @apply hidden md:block pb-1 text-xs border border-transparent hover:border-white rounded-sm p-2
+  }
+
+  .div-shopping-cart-topheader {
+    @apply p-2 border border-transparent hover:border-white rounded-sm absolute right-0 top-0 mr-2 mt-2 md:mr-0 md:mt-0 md:relative order-1 md:order-none md:flex
+  }
+
+  .span-shopping-cart-topheader {
+    @apply font-bold text-gold-200 text-base absolute top-0 left-0 -mt-1 ml-4 text-center w-6 h-6 bg-darkblue-600 rounded-full
+  }
+
+
+  .div-map-marker-header {
+    @apply flex items-center border border-transparent hover:border-white rounded-sm px-2 py-2 md:py-0
+  }
+
+  .li-header {
+    @apply mr-4 border border-transparent hover:border-white rounded-sm px-2 py-1
+  }
+
+
+  .li-lowerheader {
+    @apply hover:text-orange-650 border-b-2 border-transparent hover:border-orange-650 py-1 px-3
+  }
+
+
+  .link-book-store {
+    @apply text-blue-600 underline hover:text-orange-650 px-1 border-r border-black
+  }
+
+  .link-book-store-right {
+    @apply text-blue-600 underline hover:text-orange-650 px-1
+  }
+
+  .select-product-catalog {
+    @apply bg-gray-300 pr-4 md:pr-12 ml-3 rounded-sm border border-gray-600 text-xs px-1
+  }
+
+  .container-card-product {
+    @apply flex flex-wrap border border-gray-300 divide-x divide-gray-300 mb-10
+  }
+
+  .card-product {
+   @apply w-1/2 md:w-1/4 flex flex-col px-8 py-4 border-b border-gray-300
+  }
+
+  .img-card-product {
+    @apply h-210px place-self-center p-2
+  }
+
+  .link-card-product {
+    @apply text-sm text-blue-600 hover:underline hover:text-orange-600 mb-2
+  }
+
+  .link-description-card-product {
+    @apply text-xs text-blue-600 hover:underline hover:text-orange-650
+  }
+
+  .btn-card-product {
+    @apply text-xs bg-gray-200 border border-gray-600 rounded-sm py-1
+  }
+}
